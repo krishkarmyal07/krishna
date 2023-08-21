@@ -120,10 +120,11 @@
 
 .vscode-container {
     display: flex;
-    height: 100vh;
-    position: relative;
+    /* height: 100vh; */
+    position: fixed;
     align-items: flex-start;
     background-color: #333;
+    width: 100%;
 }
 
 
@@ -739,15 +740,16 @@ body {
     }
     .code-container {
         // padding: 10px;
+        padding: 20px 0px 0px 0px;
         overflow: scroll;
+        margin-top: 10px;
+        // margin-left: revert;
+         overflow: scroll;
             padding: 20px 0px 0px 0px;
             overflow: scroll;
             margin-left: 36px;
       }
       
-      .code {
-       display:none
-      }
       .bottom-code{
         display: none;
       }
