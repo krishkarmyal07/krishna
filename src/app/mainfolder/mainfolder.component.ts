@@ -2,11 +2,12 @@ import { Component, HostListener,Renderer2, OnInit } from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-navbar',
-  templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss']
+  selector: 'app-mainfolder',
+  templateUrl: './mainfolder.component.html',
+  styleUrls: ['./mainfolder.component.scss']
 })
 export class NavbarComponent implements OnInit {
+  
   activeSection: string = 'welcome'; // Set the initial active section
   f = '{'
   l = '}'
