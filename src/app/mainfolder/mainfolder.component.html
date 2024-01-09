@@ -1,333 +1,339 @@
-
+<div class="mobile-hide" style="background-color: black;"> 
+  
 <div class="vscode-header">
-    <div class="header-left">
-        <div class="logo">
-            <svg width="15px" height="15px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>K's</title><path d="M18.842,20.224l4.295,6.407h6.79L22.232,15.262l-3.39,4.961" style="fill:#429f87"/><path d="M5.154,23.659,8.3,20.7l5.028,5.934L10.1,14.727,7.374,19.21l-2.22,4.449" style="fill:#429f87"/><path d="M5.154,23.659,10.1,14.727,6.956,17.691,1.927,11.756l3.228,11.9" style="fill:#56c5a8"/><path d="M29.28,5.122H22.49l-4.158,6.144V5.122H12.1v6.372l3.321,12.239.774,2.9h2.134V21.254L29.28,5.122" style="fill:#56c5a8"/></svg>
-        </div>
-        <div class="navigation">
-            <span>File</span>
-            <span>Edit</span>
-            <span>View</span>
-        </div>
-    </div>
-    <div class="header-center">
-        <div class="search-container">
-            <span class="search-bar">
-                <svg width="15" height="15" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#d0d0d0"><path d="M15.25 0a8.25 8.25 0 0 0-6.18 13.72L1 22.88l1.12 1 8.05-9.12A8.251 8.251 0 1 0 15.25.01V0zm0 15a6.75 6.75 0 1 1 0-13.5 6.75 6.75 0 0 1 0 13.5z"/></svg>
-                <span>portfolio</span>
-            </span>
-        </div>
-    </div>
-    <div class="header-right">
-        <i class="fas fa-window-minimize"></i>
-        <i class="fas fa-window-maximize"></i>
-        <i class="fas fa-times"></i>
-    </div>
+  <div class="header-left">
+      <div class="logo">
+          <svg width="15px" height="15px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>K's</title><path d="M18.842,20.224l4.295,6.407h6.79L22.232,15.262l-3.39,4.961" style="fill:#429f87"/><path d="M5.154,23.659,8.3,20.7l5.028,5.934L10.1,14.727,7.374,19.21l-2.22,4.449" style="fill:#429f87"/><path d="M5.154,23.659,10.1,14.727,6.956,17.691,1.927,11.756l3.228,11.9" style="fill:#56c5a8"/><path d="M29.28,5.122H22.49l-4.158,6.144V5.122H12.1v6.372l3.321,12.239.774,2.9h2.134V21.254L29.28,5.122" style="fill:#56c5a8"/></svg>
+      </div>
+      <div class="navigation">
+          <span>File</span>
+          <span>Edit</span>
+          <span>View</span>
+      </div>
+  </div>
+  <div class="header-center">
+      <div class="search-container">
+          <span class="search-bar">
+              <svg width="15" height="15" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#d0d0d0"><path d="M15.25 0a8.25 8.25 0 0 0-6.18 13.72L1 22.88l1.12 1 8.05-9.12A8.251 8.251 0 1 0 15.25.01V0zm0 15a6.75 6.75 0 1 1 0-13.5 6.75 6.75 0 0 1 0 13.5z"/></svg>
+              <span>portfolio</span>
+          </span>
+      </div>
+  </div>
+  <div class="header-right">
+      <i class="fas fa-window-minimize"></i>
+      <i class="fas fa-window-maximize"></i>
+      <i class="fas fa-times"></i>
+  </div>
 </div>
 
 
 <div class="vscode-container">
-    <div class="vscode-sidebar">
-        <div class="vscode-menu">
-            <ul class="vscode-menu-list">
-                <li (click)="toggleExplorer()" class="menu-active"><a href="#" >
-                    <svg width="30px" height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#fff"><path d="M17.5 0h-9L7 1.5V6H2.5L1 7.5v15.07L2.5 24h12.07L16 22.57V18h4.7l1.3-1.43V4.5L17.5 0zm0 2.12l2.38 2.38H17.5V2.12zm-3 20.38h-12v-15H7v9.07L8.5 18h6v4.5zm6-6h-12v-15H16V6h4.5v10.5z"/></svg>
-                </a></li>
-                <li><a href="#" (click)="setActiveSection('contact'); activeTab('contact');">
-                    <svg width="30px" height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#3c3c3c"><path d="M15.25 0a8.25 8.25 0 0 0-6.18 13.72L1 22.88l1.12 1 8.05-9.12A8.251 8.251 0 1 0 15.25.01V0zm0 15a6.75 6.75 0 1 1 0-13.5 6.75 6.75 0 0 1 0 13.5z"/></svg>
-                </a></li>
-                <li><a href="#" (click)="setActiveSection('projects'); activeTab('projects');">
-                    <svg fill="#3c3c3c" width="30px" height="30px" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg">
-                        <g opacity="0.2">
-                          <circle cx="188" cy="67.99756" r="28"/>
-                        </g>
-                        <path d="M224,67.99756a36,36,0,1,0-44,35.09289v.9076a16.01844,16.01844,0,0,1-15.999,16L92,119.99951a31.80288,31.80288,0,0,0-16,4.29492v-21.204a36,36,0,1,0-16,0V152.9071a36,36,0,1,0,16,0v-.90759a16.01865,16.01865,0,0,1,16-16l72.001-.00146a32.03646,32.03646,0,0,0,31.999-32v-.9076A36.05514,36.05514,0,0,0,224,67.99756Zm-176,0a20,20,0,1,1,20,20A20.0226,20.0226,0,0,1,48,67.99756ZM88,188a20,20,0,1,1-20-20A20.0226,20.0226,0,0,1,88,188ZM188,87.99756a20,20,0,1,1,20-20A20.0226,20.0226,0,0,1,188,87.99756Z"/>
-                      </svg>
-                </a></li>
+  <div class="vscode-sidebar">
+      <div class="vscode-menu">
+          <ul class="vscode-menu-list">
+              <li (click)="toggleExplorer()" class="menu-active"><a href="#" >
+                  <svg width="30px" height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#fff"><path d="M17.5 0h-9L7 1.5V6H2.5L1 7.5v15.07L2.5 24h12.07L16 22.57V18h4.7l1.3-1.43V4.5L17.5 0zm0 2.12l2.38 2.38H17.5V2.12zm-3 20.38h-12v-15H7v9.07L8.5 18h6v4.5zm6-6h-12v-15H16V6h4.5v10.5z"/></svg>
+              </a></li>
+              <li><a href="#" (click)="setActiveSection('contact'); activeTab('contact');">
+                  <svg width="30px" height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#3c3c3c"><path d="M15.25 0a8.25 8.25 0 0 0-6.18 13.72L1 22.88l1.12 1 8.05-9.12A8.251 8.251 0 1 0 15.25.01V0zm0 15a6.75 6.75 0 1 1 0-13.5 6.75 6.75 0 0 1 0 13.5z"/></svg>
+              </a></li>
+              <li><a href="#" (click)="setActiveSection('projects'); activeTab('projects');">
+                  <svg fill="#3c3c3c" width="30px" height="30px" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg">
+                      <g opacity="0.2">
+                        <circle cx="188" cy="67.99756" r="28"/>
+                      </g>
+                      <path d="M224,67.99756a36,36,0,1,0-44,35.09289v.9076a16.01844,16.01844,0,0,1-15.999,16L92,119.99951a31.80288,31.80288,0,0,0-16,4.29492v-21.204a36,36,0,1,0-16,0V152.9071a36,36,0,1,0,16,0v-.90759a16.01865,16.01865,0,0,1,16-16l72.001-.00146a32.03646,32.03646,0,0,0,31.999-32v-.9076A36.05514,36.05514,0,0,0,224,67.99756Zm-176,0a20,20,0,1,1,20,20A20.0226,20.0226,0,0,1,48,67.99756ZM88,188a20,20,0,1,1-20-20A20.0226,20.0226,0,0,1,88,188ZM188,87.99756a20,20,0,1,1,20-20A20.0226,20.0226,0,0,1,188,87.99756Z"/>
+                    </svg>
+              </a></li>
 
-                <li><a href="#"(click)="setActiveSection('experience'); activeTab('experience');" >
-                    <svg width="30px" height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#3c3c3c"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.5 1.5L15 0h7.5L24 1.5V9l-1.5 1.5H15L13.5 9V1.5zm1.5 0V9h7.5V1.5H15zM0 15V6l1.5-1.5H9L10.5 6v7.5H18l1.5 1.5v7.5L18 24H1.5L0 22.5V15zm9-1.5V6H1.5v7.5H9zM9 15H1.5v7.5H9V15zm1.5 7.5H18V15h-7.5v7.5z"/></svg>
-                </a></li>
-            </ul>
-        </div>
-
-        <div class="additional-menu">
-            <ul class="additional-menu-list">
-                <!-- New menu items at the bottom of the sidebar -->
-                <svg (click)="setActiveSection('about'); activeTab('about');" fill="#3c3c3c" width="30px" height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" >
-                    <path fill-rule="evenodd" d="M6.03531778,18.739764 C7.62329979,20.146176 9.71193925,21 12,21 C14.2880608,21 16.3767002,20.146176 17.9646822,18.739764 C17.6719994,17.687349 15.5693823,17 12,17 C8.43061774,17 6.32800065,17.687349 6.03531778,18.739764 Z M4.60050358,17.1246475 C5.72595131,15.638064 8.37060189,15 12,15 C15.6293981,15 18.2740487,15.638064 19.3994964,17.1246475 C20.4086179,15.6703183 21,13.9042215 21,12 C21,7.02943725 16.9705627,3 12,3 C7.02943725,3 3,7.02943725 3,12 C3,13.9042215 3.59138213,15.6703183 4.60050358,17.1246475 Z M12,23 C5.92486775,23 1,18.0751322 1,12 C1,5.92486775 5.92486775,1 12,1 C18.0751322,1 23,5.92486775 23,12 C23,18.0751322 18.0751322,23 12,23 Z M8,10 C8,7.75575936 9.57909957,6 12,6 C14.4141948,6 16,7.92157821 16,10.2 C16,13.479614 14.2180861,15 12,15 C9.76086382,15 8,13.4273743 8,10 Z M10,10 C10,12.2692568 10.8182108,13 12,13 C13.1777063,13 14,12.2983927 14,10.2 C14,8.95041736 13.2156568,8 12,8 C10.7337387,8 10,8.81582479 10,10 Z"/>
-                  </svg>
-                <svg style="cursor: not-allowed;" fill="#3c3c3c" width="30px" height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M20.8733438,18.6798456 L18.6561681,20.8970213 L15.8183182,20.1064695 L15.006735,20.4411839 L13.5498403,22.99899 L10.4152664,22.99899 L8.96643872,20.4324639 L8.15567513,20.0925211 L5.31808752,20.8732969 L3.1019687,18.6571781 L3.89252047,15.8193282 L3.557737,15.0075774 L1,13.5496234 L1,10.4151434 L3.56757573,8.96634421 L3.90747891,8.15567513 L3.12670306,5.31808752 L5.34198234,3.10280823 L8.17984769,3.89446381 L8.99071892,3.56004309 L10.4454387,1 L13.5808166,1 L15.0296158,3.56757573 L15.8402849,3.90747891 L18.6774046,3.12683179 L20.8961418,5.34235339 L20.1054595,8.18067182 L20.4399569,8.99172892 L23,10.4464487 L23,13.5818266 L20.4326665,15.0304891 L20.0924686,15.8429951 L20.8733438,18.6798456 Z M17.9808573,15.7077573 L18.8526582,13.6256062 L21,12.4139314 L21,11.6103133 L18.8534478,10.3905557 L17.9941264,8.30695569 L18.6558226,5.93165934 L18.0869626,5.36362372 L15.7044076,6.01919516 L13.6244596,5.14709956 L12.4129214,3 L11.6093033,3 L10.3895457,5.1465522 L8.30575983,6.00595029 L5.93001038,5.34320732 L5.36375245,5.90946526 L6.01919516,8.29155242 L5.14709956,10.3715004 L3,11.5830386 L3,12.3875547 L5.14481829,13.610138 L6.00385363,15.6930443 L5.34202685,18.0688091 L5.90946526,18.6362476 L8.29155242,17.9808048 L10.3714059,18.8528608 L11.5829156,20.99899 L12.3873378,20.99899 L13.6089604,18.8542408 L15.6920343,17.9951364 L18.0677992,18.6569631 L18.6362007,18.0885616 L17.9808573,15.7077573 Z M12,16 C9.790861,16 8,14.209139 8,12 C8,9.790861 9.790861,8 12,8 C14.209139,8 16,9.790861 16,12 C16,14.209139 14.209139,16 12,16 Z M12,14 C13.1045695,14 14,13.1045695 14,12 C14,10.8954305 13.1045695,10 12,10 C10.8954305,10 10,10.8954305 10,12 C10,13.1045695 10.8954305,14 12,14 Z" />
-                  </svg>
-            </ul>
-        </div>
-    </div>
-
-    <div class="vscode-explorer" [ngClass]="{'expanded': isExplorerOpen}">
-        <!-- Explorer content goes here -->
-        <div class="Explorer">
-          <div style="font-size: 13px;">EXPLORER</div>
-          <div class="exp">...</div>
-        </div>
-
-        <ul class="explorer-list">
-            <li class="folder" *ngFor="let folder of folders" [class.expanded]="folder.expanded">
-              <div class="folder-header" (click)="toggleDropdown(folder)">
-                <i class="fas fa-angle-right"></i>
-                {{ folder.name }}
-              </div>
-              <ul class="sub-explorer-list">
-                <li class="sub-list" style="display: flex;" *ngFor="let file of folder.files" (click)="openTabs(file)">
-                  <span [innerHTML]="file.icon"></span>
-                  <span>{{ file.title }}</span>
-                  
-                </li>
-              </ul>
-            </li>
+              <li><a href="#"(click)="setActiveSection('experience'); activeTab('experience');" >
+                  <svg width="30px" height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#3c3c3c"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.5 1.5L15 0h7.5L24 1.5V9l-1.5 1.5H15L13.5 9V1.5zm1.5 0V9h7.5V1.5H15zM0 15V6l1.5-1.5H9L10.5 6v7.5H18l1.5 1.5v7.5L18 24H1.5L0 22.5V15zm9-1.5V6H1.5v7.5H9zM9 15H1.5v7.5H9V15zm1.5 7.5H18V15h-7.5v7.5z"/></svg>
+              </a></li>
           </ul>
-    </div>
- 
-    <main class="content">
-      
-      <header class="vscode-navbar "   [ngClass]="{'sidebar-closed': !isExplorerOpen}">
-        <nav class="vscode-tabs">
-            <ul class="vscode-tab-list">
-                <li (click)="setActiveSection('welcome')" class="vscode-tab" [class.active]="activeSection === 'welcome'" *ngIf="activeTabs.includes('welcome')">
-                    <a  class="tab-icon">
-                        <svg style="margin: 0 10px;" width="20px" height="20px" viewBox="0 0 24 32" xmlns="http://www.w3.org/2000/svg"><title>file_type_html</title><polygon points="5.902 27.201 3.655 2 28.345 2 26.095 27.197 15.985 30 5.902 27.201" style="fill:#e44f26"/><polygon points="16 27.858 24.17 25.593 26.092 4.061 16 4.061 16 27.858" style="fill:#f1662a"/><polygon points="16 13.407 11.91 13.407 11.628 10.242 16 10.242 16 7.151 15.989 7.151 8.25 7.151 8.324 7.981 9.083 16.498 16 16.498 16 13.407" style="fill:#ebebeb"/><polygon points="16 21.434 15.986 21.438 12.544 20.509 12.324 18.044 10.651 18.044 9.221 18.044 9.654 22.896 15.986 24.654 16 24.65 16 21.434" style="fill:#ebebeb"/><polygon points="15.989 13.407 15.989 16.498 19.795 16.498 19.437 20.507 15.989 21.437 15.989 24.653 22.326 22.896 22.372 22.374 23.098 14.237 23.174 13.407 22.341 13.407 15.989 13.407" style="fill:#fff"/><polygon points="15.989 7.151 15.989 9.071 15.989 10.235 15.989 10.242 23.445 10.242 23.445 10.242 23.455 10.242 23.517 9.548 23.658 7.981 23.732 7.151 15.989 7.151" style="fill:#fff"/></svg>
-                        welcome.html <i class="fa fa-times icon-cross" aria-hidden="true" (click)="close('welcome')"></i></a>
-                        
-                </li>
-                <li (click)="setActiveSection('about')" class="vscode-tab" [class.active]="activeSection === 'about'" *ngIf="activeTabs.includes('about')">
-                    <a  class="tab-icon">
-                        <svg style="margin: 0 10px;" width="20px" height="20px" viewBox="0 0 24 32" xmlns="http://www.w3.org/2000/svg"><title>file_type_css</title><polygon points="5.902 27.201 3.656 2 28.344 2 26.095 27.197 15.985 30 5.902 27.201" style="fill:#1572b6"/><polygon points="16 27.858 24.17 25.593 26.092 4.061 16 4.061 16 27.858" style="fill:#33a9dc"/><polygon points="16 13.191 20.09 13.191 20.372 10.026 16 10.026 16 6.935 16.011 6.935 23.75 6.935 23.676 7.764 22.917 16.282 16 16.282 16 13.191" style="fill:#fff"/><polygon points="16.019 21.218 16.005 21.222 12.563 20.292 12.343 17.827 10.67 17.827 9.24 17.827 9.673 22.68 16.004 24.438 16.019 24.434 16.019 21.218" style="fill:#ebebeb"/><polygon points="19.827 16.151 19.455 20.29 16.008 21.22 16.008 24.436 22.344 22.68 22.391 22.158 22.928 16.151 19.827 16.151" style="fill:#fff"/><polygon points="16.011 6.935 16.011 8.855 16.011 10.018 16.011 10.026 8.555 10.026 8.555 10.026 8.545 10.026 8.483 9.331 8.342 7.764 8.268 6.935 16.011 6.935" style="fill:#ebebeb"/><polygon points="16 13.191 16 15.111 16 16.274 16 16.282 12.611 16.282 12.611 16.282 12.601 16.282 12.539 15.587 12.399 14.02 12.325 13.191 16 13.191" style="fill:#ebebeb"/></svg>
-                        about.css <i class="fa fa-times icon-cross"  aria-hidden="true" (click)="close('about')"></i></a>
-                </li>
-                <li (click)="setActiveSection('experience')" class="vscode-tab" [class.active]="activeSection === 'experience'" *ngIf="activeTabs.includes('experience')">
-                    <a  class="tab-icon">
-                        <svg style="margin: 0 10px;" width="20px" height="20px" viewBox="0 0 24 32"  xmlns="http://www.w3.org/2000/svg"><title>file_type_js</title><path d="M18.774,19.7a3.727,3.727,0,0,0,3.376,2.078c1.418,0,2.324-.709,2.324-1.688,0-1.173-.931-1.589-2.491-2.272l-.856-.367c-2.469-1.052-4.11-2.37-4.11-5.156,0-2.567,1.956-4.52,5.012-4.52A5.058,5.058,0,0,1,26.9,10.52l-2.665,1.711a2.327,2.327,0,0,0-2.2-1.467,1.489,1.489,0,0,0-1.638,1.467c0,1.027.636,1.442,2.1,2.078l.856.366c2.908,1.247,4.549,2.518,4.549,5.376,0,3.081-2.42,4.769-5.671,4.769a6.575,6.575,0,0,1-6.236-3.5ZM6.686,20c.538.954,1.027,1.76,2.2,1.76,1.124,0,1.834-.44,1.834-2.15V7.975h3.422V19.658c0,3.543-2.078,5.156-5.11,5.156A5.312,5.312,0,0,1,3.9,21.688Z" style="fill:#f5de19"/></svg>
-                        experience.js <i class="fa fa-times icon-cross" aria-hidden="true" (click)="close('experience')"></i></a>
-                </li>
-                <li (click)="setActiveSection('contact')" class="vscode-tab" [class.active]="activeSection === 'btn-contact'" *ngIf="activeTabs.includes('contact')">
-                    <a  class="tab-icon">
-                        <svg style="margin: 0 10px;" width="20px" height="20px" viewBox="0 0 24 32" xmlns="http://www.w3.org/2000/svg"><title>file_type_tsconfig</title><path d="M23.827,8.243A4.424,4.424,0,0,1,26.05,9.524a5.853,5.853,0,0,1,.852,1.143c.011.045-1.534,1.083-2.471,1.662-.034.023-.169-.124-.322-.35a2.014,2.014,0,0,0-1.67-1c-1.077-.074-1.771.49-1.766,1.433a1.3,1.3,0,0,0,.153.666c.237.49.677.784,2.059,1.383,2.544,1.1,3.636,1.817,4.31,2.843a5.158,5.158,0,0,1,.416,4.333,4.764,4.764,0,0,1-3.932,2.815,10.9,10.9,0,0,1-2.708-.028,6.531,6.531,0,0,1-3.616-1.884,6.278,6.278,0,0,1-.926-1.371,2.655,2.655,0,0,1,.327-.208c.158-.09.756-.434,1.32-.761l1.024-.6.214.312a4.771,4.771,0,0,0,1.35,1.292,3.3,3.3,0,0,0,3.458-.175,1.545,1.545,0,0,0,.2-1.974c-.276-.4-.84-.727-2.443-1.422a8.8,8.8,0,0,1-3.349-2.055,4.687,4.687,0,0,1-.976-1.777,7.116,7.116,0,0,1-.062-2.268,4.332,4.332,0,0,1,3.644-3.374A9,9,0,0,1,23.827,8.243ZM15.484,9.726l.011,1.454h-4.63V24.328H7.6V11.183H2.97V9.755a13.986,13.986,0,0,1,.04-1.466c.017-.023,2.832-.034,6.245-.028l6.211.017Z" style="fill:#007acc"/><path d="M27.075,25.107l.363-.361c1.68.055,1.706,0,1.78-.177l.462-1.124.034-.107-.038-.093c-.02-.049-.081-.2-1.13-1.2v-.526c1.211-1.166,1.185-1.226,1.116-1.4l-.46-1.136c-.069-.17-.1-.237-1.763-.191l-.364-.367a8.138,8.138,0,0,0-.057-1.657l-.047-.106-1.2-.525c-.177-.081-.239-.11-1.372,1.124l-.509-.008c-1.167-1.245-1.222-1.223-1.4-1.152l-1.115.452c-.175.071-.236.1-.169,1.79l-.36.359c-1.68-.055-1.7,0-1.778.177L18.606,20l-.036.108.038.094c.02.048.078.194,1.13,1.2v.525c-1.211,1.166-1.184,1.226-1.115,1.4l.459,1.137c.07.174.1.236,1.763.192l.363.377a8.169,8.169,0,0,0,.055,1.654l.047.107,1.208.528c.176.073.236.1,1.366-1.13l.509.006c1.168,1.247,1.228,1.223,1.4,1.154l1.113-.45C27.082,26.827,27.143,26.8,27.075,25.107Zm-4.788-2.632a2,2,0,1,1,2.618,1.14A2.023,2.023,0,0,1,22.287,22.475Z" style="fill:#99b8c4"/></svg>
-                        contact.ts <i class="fa fa-times icon-cross" aria-hidden="true" (click)="close('contact')"></i></a>
-                </li>
-                <li (click)="setActiveSection('projects')" class="vscode-tab" [class.active]="activeSection === 'projects'" *ngIf="activeTabs.includes('projects')">
-                    <a  class="tab-icon">
-                        <svg style="margin: 0 10px;" width="20px" height="20px" viewBox="0 0 24 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                            <title>git</title>
-                            <path d="M30.428 14.663l-13.095-13.094c-0.35-0.349-0.833-0.565-1.367-0.565s-1.017 0.216-1.367 0.565l0-0-2.713 2.718 3.449 3.449c0.22-0.077 0.473-0.121 0.737-0.121 1.269 0 2.297 1.028 2.297 2.297 0 0.269-0.046 0.526-0.131 0.766l0.005-0.016 3.322 3.324c0.222-0.079 0.479-0.125 0.746-0.125 1.268 0 2.296 1.028 2.296 2.296s-1.028 2.296-2.296 2.296c-1.268 0-2.296-1.028-2.296-2.296 0-0.313 0.063-0.611 0.176-0.883l-0.006 0.015-3.11-3.094v8.154c0.764 0.385 1.279 1.163 1.279 2.061 0 1.27-1.030 2.3-2.3 2.3s-2.3-1.030-2.3-2.3c0-0.634 0.256-1.207 0.671-1.623l-0 0c0.211-0.211 0.462-0.382 0.741-0.502l0.015-0.006v-8.234c-0.842-0.354-1.422-1.173-1.422-2.126 0-0.32 0.065-0.624 0.183-0.901l-0.006 0.015-3.389-3.405-8.98 8.974c-0.348 0.351-0.562 0.834-0.562 1.368s0.215 1.017 0.563 1.368l13.096 13.092c0.349 0.35 0.832 0.566 1.366 0.566s1.016-0.216 1.366-0.566l13.034-13.034c0.35-0.349 0.567-0.833 0.567-1.366s-0.217-1.017-0.567-1.366l-0-0z" fill="orange"></path>
-                        </svg>
-                     project.gitkeep <i class="fa fa-times icon-cross" aria-hidden="true" (click)="close('projects')"></i></a>
-                </li>
-            </ul>
-        </nav>
-        <div class="vscode-breadcrumb" *ngIf="activeTabs.length>0">
-            <ul class="breadcrumb-list">
-                <li><a href="#">portfolio ></a></li>
-                <li><a href="#">{{activeSection}} </a></li>
-            </ul>
-        </div>
+      </div>
 
+      <div class="additional-menu">
+          <ul class="additional-menu-list">
+              <!-- New menu items at the bottom of the sidebar -->
+              <svg (click)="setActiveSection('about'); activeTab('about');" fill="#3c3c3c" width="30px" height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" >
+                  <path fill-rule="evenodd" d="M6.03531778,18.739764 C7.62329979,20.146176 9.71193925,21 12,21 C14.2880608,21 16.3767002,20.146176 17.9646822,18.739764 C17.6719994,17.687349 15.5693823,17 12,17 C8.43061774,17 6.32800065,17.687349 6.03531778,18.739764 Z M4.60050358,17.1246475 C5.72595131,15.638064 8.37060189,15 12,15 C15.6293981,15 18.2740487,15.638064 19.3994964,17.1246475 C20.4086179,15.6703183 21,13.9042215 21,12 C21,7.02943725 16.9705627,3 12,3 C7.02943725,3 3,7.02943725 3,12 C3,13.9042215 3.59138213,15.6703183 4.60050358,17.1246475 Z M12,23 C5.92486775,23 1,18.0751322 1,12 C1,5.92486775 5.92486775,1 12,1 C18.0751322,1 23,5.92486775 23,12 C23,18.0751322 18.0751322,23 12,23 Z M8,10 C8,7.75575936 9.57909957,6 12,6 C14.4141948,6 16,7.92157821 16,10.2 C16,13.479614 14.2180861,15 12,15 C9.76086382,15 8,13.4273743 8,10 Z M10,10 C10,12.2692568 10.8182108,13 12,13 C13.1777063,13 14,12.2983927 14,10.2 C14,8.95041736 13.2156568,8 12,8 C10.7337387,8 10,8.81582479 10,10 Z"/>
+                </svg>
+              <svg style="cursor: not-allowed;" fill="#3c3c3c" width="30px" height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M20.8733438,18.6798456 L18.6561681,20.8970213 L15.8183182,20.1064695 L15.006735,20.4411839 L13.5498403,22.99899 L10.4152664,22.99899 L8.96643872,20.4324639 L8.15567513,20.0925211 L5.31808752,20.8732969 L3.1019687,18.6571781 L3.89252047,15.8193282 L3.557737,15.0075774 L1,13.5496234 L1,10.4151434 L3.56757573,8.96634421 L3.90747891,8.15567513 L3.12670306,5.31808752 L5.34198234,3.10280823 L8.17984769,3.89446381 L8.99071892,3.56004309 L10.4454387,1 L13.5808166,1 L15.0296158,3.56757573 L15.8402849,3.90747891 L18.6774046,3.12683179 L20.8961418,5.34235339 L20.1054595,8.18067182 L20.4399569,8.99172892 L23,10.4464487 L23,13.5818266 L20.4326665,15.0304891 L20.0924686,15.8429951 L20.8733438,18.6798456 Z M17.9808573,15.7077573 L18.8526582,13.6256062 L21,12.4139314 L21,11.6103133 L18.8534478,10.3905557 L17.9941264,8.30695569 L18.6558226,5.93165934 L18.0869626,5.36362372 L15.7044076,6.01919516 L13.6244596,5.14709956 L12.4129214,3 L11.6093033,3 L10.3895457,5.1465522 L8.30575983,6.00595029 L5.93001038,5.34320732 L5.36375245,5.90946526 L6.01919516,8.29155242 L5.14709956,10.3715004 L3,11.5830386 L3,12.3875547 L5.14481829,13.610138 L6.00385363,15.6930443 L5.34202685,18.0688091 L5.90946526,18.6362476 L8.29155242,17.9808048 L10.3714059,18.8528608 L11.5829156,20.99899 L12.3873378,20.99899 L13.6089604,18.8542408 L15.6920343,17.9951364 L18.0677992,18.6569631 L18.6362007,18.0885616 L17.9808573,15.7077573 Z M12,16 C9.790861,16 8,14.209139 8,12 C8,9.790861 9.790861,8 12,8 C14.209139,8 16,9.790861 16,12 C16,14.209139 14.209139,16 12,16 Z M12,14 C13.1045695,14 14,13.1045695 14,12 C14,10.8954305 13.1045695,10 12,10 C10.8954305,10 10,10.8954305 10,12 C10,13.1045695 10.8954305,14 12,14 Z" />
+                </svg>
+          </ul>
+      </div>
+  </div>
 
+  <div class="vscode-explorer" [ngClass]="{'expanded': isExplorerOpen}">
+      <!-- Explorer content goes here -->
+      <div class="Explorer">
+        <div style="font-size: 13px;">EXPLORER</div>
+        <div class="exp">...</div>
+      </div>
 
-
-
-    </header>
-
-    <section id="welcome" class="vscode-section " [class.active]="activeSection === 'welcome'" [ngClass]="{'explorer-open': !isExplorerOpen}">
-        
-        <!-- <div class="welcome-section">
-            <h2 class="welcome-title">
-             <span style="color: #fff;"> Hi, I'm </span><span class="colored-text">Krishna</span>
-            </h2>
-            <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
-          </div> -->
-          <!-- <section class="welcome-section">
-            <div class="background-text">Bukki's World</div>
-            <div class="content">
-              <h1 class="title">Hi, I Develop Web Applications</h1>
-              <div class='console-container'><span id='text'></span><div class='console-underscore' id='console' style="color: black;">&#95;</div></div>
+      <ul class="explorer-list">
+          <li class="folder" *ngFor="let folder of folders" [class.expanded]="folder.expanded">
+            <div class="folder-header" (click)="toggleDropdown(folder)">
+              <i class="fas fa-angle-right"></i>
+              {{ folder.name }}
             </div>
-          </section> -->
-          <!-- <section class="welcome-section"> -->
-            <!-- <div class="background-text">KRISHNA</div> -->
-            <div class="content1" style="background-color: #33a9dc;">
-              <div class="left-content">
-                <h1 class="title">Hi, I Develop
-                     <!-- <span class="web"  style="color:#425bff;  font-style: italic;">W</span><span class="web" style="  font-style: italic;">E</span><span class="web" style="color:green; font-style: italic;">B</span> -->
-                      Applications</h1>
-                <div class="description">
-                    <div class='console-container'><span id='text'></span><div class='console-underscore' id='console' style="color: rgb(234, 229, 229);">&#95;</div></div>
-                </div>
-              </div>
-              <div class="right-content">
-                <img src="https://raw.githubusercontent.com/krishkarmyal07/krishna/main/src/assets/avatar.png" alt="Web Development Image">
-              </div>
-            </div>
-            <div class="buttons">
-                <a href="#" (click)="setActiveSection('contact'); activeTab('contact');" class="btn btn-contact">Contact</a>
-                <a href="#" (click)="setActiveSection('about'); activeTab('about');" class="btn btn-about">About</a>
-            </div>
-            <div class="buttons know-more" style="background-color: #33a9dc;">
-                <div>
-                    Use the EXPLORER to know more...
-                </div>
-            </div>
-          <!-- </section> -->
-    </section>
-    <section id="about" class="vscode-section" [class.active]="activeSection === 'about'" [ngClass]="{'explorer-open': !isExplorerOpen}">
-       <section class="about-section">
-            <div class=" css-code">
-                <code>{{ typingCode }} </code>
-            </div>
-            <div class="buttons know-more" style="background-color: black;">
-                <div>
-                    Use the EXPLORER to know more...
-                </div>
-            </div>
-        </section>
-    </section>
-    <section id="experience" class="vscode-section" [class.active]="activeSection === 'experience'" [ngClass]="{'explorer-open': !isExplorerOpen}">
-        <!-- experience content goes here -->
-        <div class="code-container">
-            <pre class="code">
-              <code>
-                <span class="keyword">const</span> experience = <span class="brace">{{f}}</span>
-                  <span class="property">position</span>: <span class="string">'Web Developer'</span>,
-                  <span class="property">company</span>: <span class="string">'Queenzend Web Solutions.'</span>,
-                  <span class="property">duration</span>: <span class="string">'2021 - Present'</span>,
-                  <span class="property">description</span>: <span class="string">'Developing modern web applications using Angular and React.'</span>
-                <span class="brace">{{l}}</span>;
-              </code>
-            </pre>
-          </div>
-        <div class="code-container">
-            <pre class="code">
-              <code>
-                <span class="keyword">const</span> experience = <span class="brace">{{f}}</span>
-                  <span class="property">position</span>: <span class="string">'Sr. Tech Support Exe.'</span>,
-                  <span class="property">company</span>: <span class="string">'Concentrix'</span>,
-                  <span class="property">duration</span>: <span class="string">'2019 - 2021'</span>,
-                  <span class="property">description</span>: <span class="string">'Developing modern web applications using Angular and React.'</span>
-                <span class="brace">{{l}}</span>;
-              </code>
-            </pre>
-          </div>
-        <div class="code-container bottom-code">
-            <pre class="code">
-              <code>
-                  <span class="property">let</span> info: string = <span class="string">'Developing modern web applications using Angular and React.'</span>
-
-              </code>
-            </pre>
-        </div>
-          <!-- <div class="buttons know-more" style="background-color: rgb(31, 147, 127);">
-            <div>
-                Use the EXPLORER to know more...
-            </div>
-        </div> -->
-
-    </section>
-    <section id="education" class="vscode-section" [class.active]="activeSection === 'contact'" [ngClass]="{'explorer-open': !isExplorerOpen}">
-        <section class="contact-section">
-            <h2>Contact Me</h2>
-            <p>Connect with me on social media:</p>
-            <div class="social-cards">
-              <div class="social-card">
-                <svg width="100px" height="100px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none"><path fill="#0A66C2" d="M12.225 12.225h-1.778V9.44c0-.664-.012-1.519-.925-1.519-.926 0-1.068.724-1.068 1.47v2.834H6.676V6.498h1.707v.783h.024c.348-.594.996-.95 1.684-.925 1.802 0 2.135 1.185 2.135 2.728l-.001 3.14zM4.67 5.715a1.037 1.037 0 01-1.032-1.031c0-.566.466-1.032 1.032-1.032.566 0 1.031.466 1.032 1.032 0 .566-.466 1.032-1.032 1.032zm.889 6.51h-1.78V6.498h1.78v5.727zM13.11 2H2.885A.88.88 0 002 2.866v10.268a.88.88 0 00.885.866h10.226a.882.882 0 00.889-.866V2.865a.88.88 0 00-.889-.864z"/></svg>
-                <h3>LinkedIn</h3>
+            <ul class="sub-explorer-list">
+              <li class="sub-list" style="display: flex;" *ngFor="let file of folder.files" (click)="openTabs(file)">
+                <span [innerHTML]="file.icon"></span>
+                <span>{{ file.title }}</span>
                 
-      <style>
-        .libutton {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          padding: 7px;
-          text-align: center;
-          outline: none;
-          text-decoration: none !important;
-          color: #ffffff !important;
-          width: 200px;
-          height: 32px;
-          border-radius: 16px;
-          background-color: #0A66C2;
-          font-family: "SF Pro Text", Helvetica, sans-serif;
-        }
-      </style>
-             <a class="libutton" href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=krishna-karmyal" target="_blank">Follow on LinkedIn</a>
-               
-              </div>
-              <div class="social-card">
-                <svg width="100px" height="100px" viewBox="0 0 24 24" id="meteor-icon-kit__solid-instagram" fill="red" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.9962 0.0078125C8.73824 0.0078125 8.32971 0.021622 7.05019 0.080003C5.77333 0.138241 4.90129 0.341051 4.13824 0.637622C3.34938 0.944146 2.68038 1.35434 2.01343 2.02124C1.34652 2.68819 0.936333 3.35719 0.629809 4.14605C0.333238 4.9091 0.130429 5.78115 0.0721905 7.058C0.0138095 8.33753 0 8.74605 0 12.0041C0 15.262 0.0138095 15.6705 0.0721905 16.9501C0.130429 18.2269 0.333238 19.099 0.629809 19.862C0.936333 20.6509 1.34652 21.3199 2.01343 21.9868C2.68038 22.6537 3.34938 23.0639 4.13824 23.3705C4.90129 23.667 5.77333 23.8698 7.05019 23.9281C8.32971 23.9864 8.73824 24.0002 11.9962 24.0002C15.2542 24.0002 15.6627 23.9864 16.9422 23.9281C18.2191 23.8698 19.0911 23.667 19.8542 23.3705C20.643 23.0639 21.312 22.6537 21.979 21.9868C22.6459 21.3199 23.0561 20.6509 23.3627 19.862C23.6592 19.099 23.862 18.2269 23.9202 16.9501C23.9786 15.6705 23.9924 15.262 23.9924 12.0041C23.9924 8.74605 23.9786 8.33753 23.9202 7.058C23.862 5.78115 23.6592 4.9091 23.3627 4.14605C23.0561 3.35719 22.6459 2.68819 21.979 2.02124C21.312 1.35434 20.643 0.944146 19.8542 0.637622C19.0911 0.341051 18.2191 0.138241 16.9422 0.080003C15.6627 0.021622 15.2542 0.0078125 11.9962 0.0078125ZM7.99748 12.0041C7.99748 14.2125 9.78776 16.0028 11.9962 16.0028C14.2047 16.0028 15.995 14.2125 15.995 12.0041C15.995 9.79557 14.2047 8.00529 11.9962 8.00529C9.78776 8.00529 7.99748 9.79557 7.99748 12.0041ZM5.836 12.0041C5.836 8.60181 8.594 5.84381 11.9962 5.84381C15.3984 5.84381 18.1564 8.60181 18.1564 12.0041C18.1564 15.4062 15.3984 18.1642 11.9962 18.1642C8.594 18.1642 5.836 15.4062 5.836 12.0041ZM18.3998 7.03996C19.1949 7.03996 19.8394 6.39548 19.8394 5.60043C19.8394 4.80538 19.1949 4.16086 18.3998 4.16086C17.6048 4.16086 16.9603 4.80538 16.9603 5.60043C16.9603 6.39548 17.6048 7.03996 18.3998 7.03996Z" fill="#758CA3"/></svg>
-                <h3>Instagram</h3>
-                <p>@wo_kissna_hai</p>
-              </div>
-              <div class="social-card">
-            <svg width="100px" height="100px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><title>file_type_git</title><path d="M29.472,14.753,17.247,2.528a1.8,1.8,0,0,0-2.55,0L12.158,5.067l3.22,3.22a2.141,2.141,0,0,1,2.712,2.73l3.1,3.1a2.143,2.143,0,1,1-1.285,1.21l-2.895-2.895v7.617a2.141,2.141,0,1,1-1.764-.062V12.3a2.146,2.146,0,0,1-1.165-2.814L10.911,6.314,2.528,14.7a1.8,1.8,0,0,0,0,2.551L14.753,29.472a1.8,1.8,0,0,0,2.55,0L29.472,17.3a1.8,1.8,0,0,0,0-2.551" style="fill:#dd4c35"/><path d="M12.158,5.067l3.22,3.22a2.141,2.141,0,0,1,2.712,2.73l3.1,3.1a2.143,2.143,0,1,1-1.285,1.21l-2.895-2.895v7.617a2.141,2.141,0,1,1-1.764-.062V12.3a2.146,2.146,0,0,1-1.165-2.814L10.911,6.314" style="fill:#fff"/></svg>
-                <h3>GitHub</h3>
-                <p>@krishkarmyal07</p>
-              </div>
-              <!-- Add more social media cards as needed -->
-            </div>
-          </section>
-          <div class="code-container bottom-code">
-            <pre class="code">
-              <code>
-                  <span class="property">let</span> info: string = <span class="string">' I'm always excited to connect and engage with fellow developers and enthusiasts!'</span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+  </div>
 
-              </code>
-            </pre>
+  <main class="content">
+    
+    <header class="vscode-navbar "   [ngClass]="{'sidebar-closed': !isExplorerOpen}">
+      <nav class="vscode-tabs">
+          <ul class="vscode-tab-list">
+              <li (click)="setActiveSection('welcome')" class="vscode-tab" [class.active]="activeSection === 'welcome'" *ngIf="activeTabs.includes('welcome')">
+                  <a  class="tab-icon">
+                      <svg style="margin: 0 10px;" width="20px" height="20px" viewBox="0 0 24 32" xmlns="http://www.w3.org/2000/svg"><title>file_type_html</title><polygon points="5.902 27.201 3.655 2 28.345 2 26.095 27.197 15.985 30 5.902 27.201" style="fill:#e44f26"/><polygon points="16 27.858 24.17 25.593 26.092 4.061 16 4.061 16 27.858" style="fill:#f1662a"/><polygon points="16 13.407 11.91 13.407 11.628 10.242 16 10.242 16 7.151 15.989 7.151 8.25 7.151 8.324 7.981 9.083 16.498 16 16.498 16 13.407" style="fill:#ebebeb"/><polygon points="16 21.434 15.986 21.438 12.544 20.509 12.324 18.044 10.651 18.044 9.221 18.044 9.654 22.896 15.986 24.654 16 24.65 16 21.434" style="fill:#ebebeb"/><polygon points="15.989 13.407 15.989 16.498 19.795 16.498 19.437 20.507 15.989 21.437 15.989 24.653 22.326 22.896 22.372 22.374 23.098 14.237 23.174 13.407 22.341 13.407 15.989 13.407" style="fill:#fff"/><polygon points="15.989 7.151 15.989 9.071 15.989 10.235 15.989 10.242 23.445 10.242 23.445 10.242 23.455 10.242 23.517 9.548 23.658 7.981 23.732 7.151 15.989 7.151" style="fill:#fff"/></svg>
+                      welcome.html <i class="fa fa-times icon-cross" aria-hidden="true" (click)="close('welcome')"></i></a>
+                      
+              </li>
+              <li (click)="setActiveSection('about')" class="vscode-tab" [class.active]="activeSection === 'about'" *ngIf="activeTabs.includes('about')">
+                  <a  class="tab-icon">
+                      <svg style="margin: 0 10px;" width="20px" height="20px" viewBox="0 0 24 32" xmlns="http://www.w3.org/2000/svg"><title>file_type_css</title><polygon points="5.902 27.201 3.656 2 28.344 2 26.095 27.197 15.985 30 5.902 27.201" style="fill:#1572b6"/><polygon points="16 27.858 24.17 25.593 26.092 4.061 16 4.061 16 27.858" style="fill:#33a9dc"/><polygon points="16 13.191 20.09 13.191 20.372 10.026 16 10.026 16 6.935 16.011 6.935 23.75 6.935 23.676 7.764 22.917 16.282 16 16.282 16 13.191" style="fill:#fff"/><polygon points="16.019 21.218 16.005 21.222 12.563 20.292 12.343 17.827 10.67 17.827 9.24 17.827 9.673 22.68 16.004 24.438 16.019 24.434 16.019 21.218" style="fill:#ebebeb"/><polygon points="19.827 16.151 19.455 20.29 16.008 21.22 16.008 24.436 22.344 22.68 22.391 22.158 22.928 16.151 19.827 16.151" style="fill:#fff"/><polygon points="16.011 6.935 16.011 8.855 16.011 10.018 16.011 10.026 8.555 10.026 8.555 10.026 8.545 10.026 8.483 9.331 8.342 7.764 8.268 6.935 16.011 6.935" style="fill:#ebebeb"/><polygon points="16 13.191 16 15.111 16 16.274 16 16.282 12.611 16.282 12.611 16.282 12.601 16.282 12.539 15.587 12.399 14.02 12.325 13.191 16 13.191" style="fill:#ebebeb"/></svg>
+                      about.css <i class="fa fa-times icon-cross"  aria-hidden="true" (click)="close('about')"></i></a>
+              </li>
+              <li (click)="setActiveSection('experience')" class="vscode-tab" [class.active]="activeSection === 'experience'" *ngIf="activeTabs.includes('experience')">
+                  <a  class="tab-icon">
+                      <svg style="margin: 0 10px;" width="20px" height="20px" viewBox="0 0 24 32"  xmlns="http://www.w3.org/2000/svg"><title>file_type_js</title><path d="M18.774,19.7a3.727,3.727,0,0,0,3.376,2.078c1.418,0,2.324-.709,2.324-1.688,0-1.173-.931-1.589-2.491-2.272l-.856-.367c-2.469-1.052-4.11-2.37-4.11-5.156,0-2.567,1.956-4.52,5.012-4.52A5.058,5.058,0,0,1,26.9,10.52l-2.665,1.711a2.327,2.327,0,0,0-2.2-1.467,1.489,1.489,0,0,0-1.638,1.467c0,1.027.636,1.442,2.1,2.078l.856.366c2.908,1.247,4.549,2.518,4.549,5.376,0,3.081-2.42,4.769-5.671,4.769a6.575,6.575,0,0,1-6.236-3.5ZM6.686,20c.538.954,1.027,1.76,2.2,1.76,1.124,0,1.834-.44,1.834-2.15V7.975h3.422V19.658c0,3.543-2.078,5.156-5.11,5.156A5.312,5.312,0,0,1,3.9,21.688Z" style="fill:#f5de19"/></svg>
+                      experience.js <i class="fa fa-times icon-cross" aria-hidden="true" (click)="close('experience')"></i></a>
+              </li>
+              <li (click)="setActiveSection('contact')" class="vscode-tab" [class.active]="activeSection === 'btn-contact'" *ngIf="activeTabs.includes('contact')">
+                  <a  class="tab-icon">
+                      <svg style="margin: 0 10px;" width="20px" height="20px" viewBox="0 0 24 32" xmlns="http://www.w3.org/2000/svg"><title>file_type_tsconfig</title><path d="M23.827,8.243A4.424,4.424,0,0,1,26.05,9.524a5.853,5.853,0,0,1,.852,1.143c.011.045-1.534,1.083-2.471,1.662-.034.023-.169-.124-.322-.35a2.014,2.014,0,0,0-1.67-1c-1.077-.074-1.771.49-1.766,1.433a1.3,1.3,0,0,0,.153.666c.237.49.677.784,2.059,1.383,2.544,1.1,3.636,1.817,4.31,2.843a5.158,5.158,0,0,1,.416,4.333,4.764,4.764,0,0,1-3.932,2.815,10.9,10.9,0,0,1-2.708-.028,6.531,6.531,0,0,1-3.616-1.884,6.278,6.278,0,0,1-.926-1.371,2.655,2.655,0,0,1,.327-.208c.158-.09.756-.434,1.32-.761l1.024-.6.214.312a4.771,4.771,0,0,0,1.35,1.292,3.3,3.3,0,0,0,3.458-.175,1.545,1.545,0,0,0,.2-1.974c-.276-.4-.84-.727-2.443-1.422a8.8,8.8,0,0,1-3.349-2.055,4.687,4.687,0,0,1-.976-1.777,7.116,7.116,0,0,1-.062-2.268,4.332,4.332,0,0,1,3.644-3.374A9,9,0,0,1,23.827,8.243ZM15.484,9.726l.011,1.454h-4.63V24.328H7.6V11.183H2.97V9.755a13.986,13.986,0,0,1,.04-1.466c.017-.023,2.832-.034,6.245-.028l6.211.017Z" style="fill:#007acc"/><path d="M27.075,25.107l.363-.361c1.68.055,1.706,0,1.78-.177l.462-1.124.034-.107-.038-.093c-.02-.049-.081-.2-1.13-1.2v-.526c1.211-1.166,1.185-1.226,1.116-1.4l-.46-1.136c-.069-.17-.1-.237-1.763-.191l-.364-.367a8.138,8.138,0,0,0-.057-1.657l-.047-.106-1.2-.525c-.177-.081-.239-.11-1.372,1.124l-.509-.008c-1.167-1.245-1.222-1.223-1.4-1.152l-1.115.452c-.175.071-.236.1-.169,1.79l-.36.359c-1.68-.055-1.7,0-1.778.177L18.606,20l-.036.108.038.094c.02.048.078.194,1.13,1.2v.525c-1.211,1.166-1.184,1.226-1.115,1.4l.459,1.137c.07.174.1.236,1.763.192l.363.377a8.169,8.169,0,0,0,.055,1.654l.047.107,1.208.528c.176.073.236.1,1.366-1.13l.509.006c1.168,1.247,1.228,1.223,1.4,1.154l1.113-.45C27.082,26.827,27.143,26.8,27.075,25.107Zm-4.788-2.632a2,2,0,1,1,2.618,1.14A2.023,2.023,0,0,1,22.287,22.475Z" style="fill:#99b8c4"/></svg>
+                      contact.ts <i class="fa fa-times icon-cross" aria-hidden="true" (click)="close('contact')"></i></a>
+              </li>
+              <li (click)="setActiveSection('projects')" class="vscode-tab" [class.active]="activeSection === 'projects'" *ngIf="activeTabs.includes('projects')">
+                  <a  class="tab-icon">
+                      <svg style="margin: 0 10px;" width="20px" height="20px" viewBox="0 0 24 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                          <title>git</title>
+                          <path d="M30.428 14.663l-13.095-13.094c-0.35-0.349-0.833-0.565-1.367-0.565s-1.017 0.216-1.367 0.565l0-0-2.713 2.718 3.449 3.449c0.22-0.077 0.473-0.121 0.737-0.121 1.269 0 2.297 1.028 2.297 2.297 0 0.269-0.046 0.526-0.131 0.766l0.005-0.016 3.322 3.324c0.222-0.079 0.479-0.125 0.746-0.125 1.268 0 2.296 1.028 2.296 2.296s-1.028 2.296-2.296 2.296c-1.268 0-2.296-1.028-2.296-2.296 0-0.313 0.063-0.611 0.176-0.883l-0.006 0.015-3.11-3.094v8.154c0.764 0.385 1.279 1.163 1.279 2.061 0 1.27-1.030 2.3-2.3 2.3s-2.3-1.030-2.3-2.3c0-0.634 0.256-1.207 0.671-1.623l-0 0c0.211-0.211 0.462-0.382 0.741-0.502l0.015-0.006v-8.234c-0.842-0.354-1.422-1.173-1.422-2.126 0-0.32 0.065-0.624 0.183-0.901l-0.006 0.015-3.389-3.405-8.98 8.974c-0.348 0.351-0.562 0.834-0.562 1.368s0.215 1.017 0.563 1.368l13.096 13.092c0.349 0.35 0.832 0.566 1.366 0.566s1.016-0.216 1.366-0.566l13.034-13.034c0.35-0.349 0.567-0.833 0.567-1.366s-0.217-1.017-0.567-1.366l-0-0z" fill="orange"></path>
+                      </svg>
+                   project.gitkeep <i class="fa fa-times icon-cross" aria-hidden="true" (click)="close('projects')"></i></a>
+              </li>
+          </ul>
+      </nav>
+      <div class="vscode-breadcrumb" *ngIf="activeTabs.length>0">
+          <ul class="breadcrumb-list">
+              <li><a href="#">portfolio ></a></li>
+              <li><a href="#">{{activeSection}} </a></li>
+          </ul>
+      </div>
+
+
+
+
+
+  </header>
+
+  <section id="welcome" class="vscode-section " [class.active]="activeSection === 'welcome'" [ngClass]="{'explorer-open': !isExplorerOpen}">
+      
+      <!-- <div class="welcome-section">
+          <h2 class="welcome-title">
+           <span style="color: #fff;"> Hi, I'm </span><span class="colored-text">Krishna</span>
+          </h2>
+          <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
+        </div> -->
+        <!-- <section class="welcome-section">
+          <div class="background-text">Bukki's World</div>
+          <div class="content">
+            <h1 class="title">Hi, I Develop Web Applications</h1>
+            <div class='console-container'><span id='text'></span><div class='console-underscore' id='console' style="color: black;">&#95;</div></div>
+          </div>
+        </section> -->
+        <!-- <section class="welcome-section"> -->
+          <!-- <div class="background-text">KRISHNA</div> -->
+          <div class="content1" style="background-color: #33a9dc;">
+            <div class="left-content">
+              <h1 class="title">Hi, I Develop
+                   <!-- <span class="web"  style="color:#425bff;  font-style: italic;">W</span><span class="web" style="  font-style: italic;">E</span><span class="web" style="color:green; font-style: italic;">B</span> -->
+                    Applications</h1>
+              <div class="description">
+                  <div class='console-container'><span id='text'></span><div class='console-underscore' id='console' style="color: rgb(234, 229, 229);">&#95;</div></div>
+              </div>
+            </div>
+            <div class="right-content">
+              <img src="https://raw.githubusercontent.com/krishkarmyal07/krishna/main/src/assets/avatar.png" alt="Web Development Image">
+            </div>
+          </div>
+          <div class="buttons">
+              <a href="#" (click)="setActiveSection('contact'); activeTab('contact');" class="btn btn-contact">Contact</a>
+              <a href="#" (click)="setActiveSection('about'); activeTab('about');" class="btn btn-about">About</a>
+          </div>
+          <div class="buttons know-more" style="background-color: #33a9dc;">
+              <div>
+                  Use the EXPLORER to know more...
+              </div>
+          </div>
+        <!-- </section> -->
+  </section>
+  <section id="about" class="vscode-section" [class.active]="activeSection === 'about'" [ngClass]="{'explorer-open': !isExplorerOpen}">
+     <section class="about-section">
+          <div class=" css-code">
+              <code>{{ typingCode }} </code>
+          </div>
+          <div class="buttons know-more" style="background-color: black;">
+              <div>
+                  Use the EXPLORER to know more...
+              </div>
+          </div>
+      </section>
+  </section>
+  <section id="experience" class="vscode-section" [class.active]="activeSection === 'experience'" [ngClass]="{'explorer-open': !isExplorerOpen}">
+      <!-- experience content goes here -->
+      <div class="code-container">
+          <pre class="code">
+            <code>
+              <span class="keyword">const</span> experience = <span class="brace">{{f}}</span>
+                <span class="property">position</span>: <span class="string">'Web Developer'</span>,
+                <span class="property">company</span>: <span class="string">'Queenzend Web Solutions.'</span>,
+                <span class="property">duration</span>: <span class="string">'2021 - Present'</span>,
+                <span class="property">description</span>: <span class="string">'Developing modern web applications using Angular and React.'</span>
+              <span class="brace">{{l}}</span>;
+            </code>
+          </pre>
         </div>
-    </section>
-    <section id="projects" class="vscode-section" [class.active]="activeSection === 'projects'" [ngClass]="{'explorer-open': !isExplorerOpen}">
-        <!-- About content goes here -->
-  
-        
+      <div class="code-container">
+          <pre class="code">
+            <code>
+              <span class="keyword">const</span> experience = <span class="brace">{{f}}</span>
+                <span class="property">position</span>: <span class="string">'Sr. Tech Support Exe.'</span>,
+                <span class="property">company</span>: <span class="string">'Concentrix'</span>,
+                <span class="property">duration</span>: <span class="string">'2019 - 2021'</span>,
+                <span class="property">description</span>: <span class="string">'Developing modern web applications using Angular and React.'</span>
+              <span class="brace">{{l}}</span>;
+            </code>
+          </pre>
+        </div>
+      <div class="code-container bottom-code">
+          <pre class="code">
+            <code>
+                <span class="property">let</span> info: string = <span class="string">'Developing modern web applications using Angular and React.'</span>
+
+            </code>
+          </pre>
+      </div>
+        <!-- <div class="buttons know-more" style="background-color: rgb(31, 147, 127);">
+          <div>
+              Use the EXPLORER to know more...
+          </div>
+      </div> -->
+
+  </section>
+  <section id="education" class="vscode-section" [class.active]="activeSection === 'contact'" [ngClass]="{'explorer-open': !isExplorerOpen}">
+      <section class="contact-section">
+          <h2>Contact Me</h2>
+          <p>Connect with me on social media:</p>
+          <div class="social-cards">
+            <div class="social-card">
+              <svg width="100px" height="100px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none"><path fill="#0A66C2" d="M12.225 12.225h-1.778V9.44c0-.664-.012-1.519-.925-1.519-.926 0-1.068.724-1.068 1.47v2.834H6.676V6.498h1.707v.783h.024c.348-.594.996-.95 1.684-.925 1.802 0 2.135 1.185 2.135 2.728l-.001 3.14zM4.67 5.715a1.037 1.037 0 01-1.032-1.031c0-.566.466-1.032 1.032-1.032.566 0 1.031.466 1.032 1.032 0 .566-.466 1.032-1.032 1.032zm.889 6.51h-1.78V6.498h1.78v5.727zM13.11 2H2.885A.88.88 0 002 2.866v10.268a.88.88 0 00.885.866h10.226a.882.882 0 00.889-.866V2.865a.88.88 0 00-.889-.864z"/></svg>
+              <h3>LinkedIn</h3>
+              
+    <style>
+      .libutton {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 7px;
+        text-align: center;
+        outline: none;
+        text-decoration: none !important;
+        color: #ffffff !important;
+        width: 200px;
+        height: 32px;
+        border-radius: 16px;
+        background-color: #0A66C2;
+        font-family: "SF Pro Text", Helvetica, sans-serif;
+      }
+    </style>
+           <a class="libutton" href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=krishna-karmyal" target="_blank">Follow on LinkedIn</a>
+             
+            </div>
+            <div class="social-card">
+              <svg width="100px" height="100px" viewBox="0 0 24 24" id="meteor-icon-kit__solid-instagram" fill="red" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.9962 0.0078125C8.73824 0.0078125 8.32971 0.021622 7.05019 0.080003C5.77333 0.138241 4.90129 0.341051 4.13824 0.637622C3.34938 0.944146 2.68038 1.35434 2.01343 2.02124C1.34652 2.68819 0.936333 3.35719 0.629809 4.14605C0.333238 4.9091 0.130429 5.78115 0.0721905 7.058C0.0138095 8.33753 0 8.74605 0 12.0041C0 15.262 0.0138095 15.6705 0.0721905 16.9501C0.130429 18.2269 0.333238 19.099 0.629809 19.862C0.936333 20.6509 1.34652 21.3199 2.01343 21.9868C2.68038 22.6537 3.34938 23.0639 4.13824 23.3705C4.90129 23.667 5.77333 23.8698 7.05019 23.9281C8.32971 23.9864 8.73824 24.0002 11.9962 24.0002C15.2542 24.0002 15.6627 23.9864 16.9422 23.9281C18.2191 23.8698 19.0911 23.667 19.8542 23.3705C20.643 23.0639 21.312 22.6537 21.979 21.9868C22.6459 21.3199 23.0561 20.6509 23.3627 19.862C23.6592 19.099 23.862 18.2269 23.9202 16.9501C23.9786 15.6705 23.9924 15.262 23.9924 12.0041C23.9924 8.74605 23.9786 8.33753 23.9202 7.058C23.862 5.78115 23.6592 4.9091 23.3627 4.14605C23.0561 3.35719 22.6459 2.68819 21.979 2.02124C21.312 1.35434 20.643 0.944146 19.8542 0.637622C19.0911 0.341051 18.2191 0.138241 16.9422 0.080003C15.6627 0.021622 15.2542 0.0078125 11.9962 0.0078125ZM7.99748 12.0041C7.99748 14.2125 9.78776 16.0028 11.9962 16.0028C14.2047 16.0028 15.995 14.2125 15.995 12.0041C15.995 9.79557 14.2047 8.00529 11.9962 8.00529C9.78776 8.00529 7.99748 9.79557 7.99748 12.0041ZM5.836 12.0041C5.836 8.60181 8.594 5.84381 11.9962 5.84381C15.3984 5.84381 18.1564 8.60181 18.1564 12.0041C18.1564 15.4062 15.3984 18.1642 11.9962 18.1642C8.594 18.1642 5.836 15.4062 5.836 12.0041ZM18.3998 7.03996C19.1949 7.03996 19.8394 6.39548 19.8394 5.60043C19.8394 4.80538 19.1949 4.16086 18.3998 4.16086C17.6048 4.16086 16.9603 4.80538 16.9603 5.60043C16.9603 6.39548 17.6048 7.03996 18.3998 7.03996Z" fill="#758CA3"/></svg>
+              <h3>Instagram</h3>
+              <p>@wo_kissna_hai</p>
+            </div>
+            <div class="social-card">
+          <svg width="100px" height="100px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><title>file_type_git</title><path d="M29.472,14.753,17.247,2.528a1.8,1.8,0,0,0-2.55,0L12.158,5.067l3.22,3.22a2.141,2.141,0,0,1,2.712,2.73l3.1,3.1a2.143,2.143,0,1,1-1.285,1.21l-2.895-2.895v7.617a2.141,2.141,0,1,1-1.764-.062V12.3a2.146,2.146,0,0,1-1.165-2.814L10.911,6.314,2.528,14.7a1.8,1.8,0,0,0,0,2.551L14.753,29.472a1.8,1.8,0,0,0,2.55,0L29.472,17.3a1.8,1.8,0,0,0,0-2.551" style="fill:#dd4c35"/><path d="M12.158,5.067l3.22,3.22a2.141,2.141,0,0,1,2.712,2.73l3.1,3.1a2.143,2.143,0,1,1-1.285,1.21l-2.895-2.895v7.617a2.141,2.141,0,1,1-1.764-.062V12.3a2.146,2.146,0,0,1-1.165-2.814L10.911,6.314" style="fill:#fff"/></svg>
+              <h3>GitHub</h3>
+              <p>@krishkarmyal07</p>
+            </div>
+            <!-- Add more social media cards as needed -->
+          </div>
+        </section>
+        <div class="code-container bottom-code">
+          <pre class="code">
+            <code>
+                <span class="property">let</span> info: string = <span class="string">' I'm always excited to connect and engage with fellow developers and enthusiasts!'</span>
+
+            </code>
+          </pre>
+      </div>
+  </section>
+  <section id="projects" class="vscode-section" [class.active]="activeSection === 'projects'" [ngClass]="{'explorer-open': !isExplorerOpen}">
+      <!-- About content goes here -->
+
+      
 <section class="contact-section">
-    <div class="social-cards">
-        <div class="social-card1">
-            <h3>Payroll System</h3>
-            <div>A web-based payroll management system for businesses.</div>
-            <a href="#">View Project</a>
-        </div>
-        <div class="social-card1">
-            <h3>DNI Verification</h3>
-            <div>An application for Dubai National Insurance.</div>
-            <a href="#">View Project</a>
-        </div>
-        <div class="social-card1">
-            <h3>Portfolio Website</h3>
-            <div>My personal portfolio website showcasing my work.</div>
-            <a href="#">View Project</a>
-        </div>
-    </div>
+  <div class="social-cards">
+      <div class="social-card1">
+          <h3>Payroll System</h3>
+          <div>A web-based payroll management system for businesses.</div>
+          <a href="#">View Project</a>
+      </div>
+      <div class="social-card1">
+          <h3>DNI Verification</h3>
+          <div>An application for Dubai National Insurance.</div>
+          <a href="#">View Project</a>
+      </div>
+      <div class="social-card1">
+          <h3>Portfolio Website</h3>
+          <div>My personal portfolio website showcasing my work.</div>
+          <a href="#">View Project</a>
+      </div>
+  </div>
 
 </section>
-    </section>
-    <section id="default" *ngIf="activeTabs.length == 0" class="vscode-section-default">
-        <div class="default-section-content">
-          <div class="default-icon">
-            <svg width="800px" height="800px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><title>file_type_karma</title><path d="M18.842,20.224l4.295,6.407h6.79L22.232,15.262l-3.39,4.961" style="fill:#429f87"/><path d="M5.154,23.659,8.3,20.7l5.028,5.934L10.1,14.727,7.374,19.21l-2.22,4.449" style="fill:#429f87"/><path d="M5.154,23.659,10.1,14.727,6.956,17.691,1.927,11.756l3.228,11.9" style="fill:#56c5a8"/><path d="M29.28,5.122H22.49l-4.158,6.144V5.122H12.1v6.372l3.321,12.239.774,2.9h2.134V21.254L29.28,5.122" style="fill:#56c5a8"/></svg>
-          </div>
-          <div class="shortcut-info">
-            <!-- <h2>Welcome </h2> -->
-            <div> Welcome Page <span style="text-align: center;" class="short-btn"> Ctrl </span> + <span class="short-btn"> Shift </span> + <span class="short-btn-end"> H</span> </div>
-            <div> About Page <span style="text-align: center;" class="short-btn"> Ctrl </span> + <span class="short-btn"> Shift </span> + <span class="short-btn-end"> A</span> </div>
-            <div> Experience Page <span style="text-align: center;" class="short-btn"> Ctrl </span> + <span class="short-btn"> Shift </span> + <span class="short-btn-end"> E</span> </div>
-            <div> Contact Page <span style="text-align: center;" class="short-btn"> Ctrl </span> + <span class="short-btn"> Shift </span> + <span class="short-btn-end"> Q</span> </div>
-            <div> Project Page <span style="text-align: center;" class="short-btn"> Ctrl </span> + <span class="short-btn"> Shift </span> + <span class="short-btn-end"> P</span> </div>
-            <!-- <p>Get started by clicking on a section to view and edit its content.</p> -->
-          </div>
+  </section>
+  <section id="default" *ngIf="activeTabs.length == 0" class="vscode-section-default">
+      <div class="default-section-content">
+        <div class="default-icon">
+          <svg width="800px" height="800px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><title>file_type_karma</title><path d="M18.842,20.224l4.295,6.407h6.79L22.232,15.262l-3.39,4.961" style="fill:#429f87"/><path d="M5.154,23.659,8.3,20.7l5.028,5.934L10.1,14.727,7.374,19.21l-2.22,4.449" style="fill:#429f87"/><path d="M5.154,23.659,10.1,14.727,6.956,17.691,1.927,11.756l3.228,11.9" style="fill:#56c5a8"/><path d="M29.28,5.122H22.49l-4.158,6.144V5.122H12.1v6.372l3.321,12.239.774,2.9h2.134V21.254L29.28,5.122" style="fill:#56c5a8"/></svg>
         </div>
-      </section>
-  </main>
+        <div class="shortcut-info">
+          <!-- <h2>Welcome </h2> -->
+          <div> Welcome Page <span style="text-align: center;" class="short-btn"> Ctrl </span> + <span class="short-btn"> Shift </span> + <span class="short-btn-end"> H</span> </div>
+          <div> About Page <span style="text-align: center;" class="short-btn"> Ctrl </span> + <span class="short-btn"> Shift </span> + <span class="short-btn-end"> A</span> </div>
+          <div> Experience Page <span style="text-align: center;" class="short-btn"> Ctrl </span> + <span class="short-btn"> Shift </span> + <span class="short-btn-end"> E</span> </div>
+          <div> Contact Page <span style="text-align: center;" class="short-btn"> Ctrl </span> + <span class="short-btn"> Shift </span> + <span class="short-btn-end"> Q</span> </div>
+          <div> Project Page <span style="text-align: center;" class="short-btn"> Ctrl </span> + <span class="short-btn"> Shift </span> + <span class="short-btn-end"> P</span> </div>
+          <!-- <p>Get started by clicking on a section to view and edit its content.</p> -->
+        </div>
+      </div>
+    </section>
+</main>
 
 </div>
 
-  
+
 <footer class="vscode-footer">
-    <p>&copy; 2023 Krishna's Portfolio. All rights reserved.</p>
+  <p>&copy; 2023 Krishna's Portfolio. All rights reserved.</p>
 </footer> 
+</div>
+
+<div class="mobile-show" style="background-color: #007acc;">
+  <img src="https://s.yimg.com/ny/api/res/1.2/8ZFp1a0VG63yw78DN.FD.w--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTU0MDtjZj13ZWJw/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2019-06/aac3a050-8d78-11e9-bff9-aacad65581b1" alt="">
+</div>

@@ -7,7 +7,7 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
   styleUrls: ['./mainfolder.component.scss']
 })
 export class NavbarComponent implements OnInit {
-  
+  isMobile: boolean = false;
   activeSection: string = 'welcome'; // Set the initial active section
   f = '{'
   l = '}'
@@ -21,6 +21,7 @@ export class NavbarComponent implements OnInit {
       expanded: true },
     // Add more folders as needed
   ];
+
   @HostListener('window:keydown', ['$event'])
   handleKeyboardEvent(event: KeyboardEvent) {
     if (event.ctrlKey && event.shiftKey && event.key === 'H') {
@@ -55,14 +56,14 @@ export class NavbarComponent implements OnInit {
   toggleDropdown(folder: any): void {
     folder.expanded = !folder.expanded;
   }
-
+  
   constructor(private renderer: Renderer2, private sanitizer: DomSanitizer) { }
 
   ngOnInit(): void {
     this.consoleText([ 'Welcome to My World', "I develop web applications.","Web Development Enthusiast", 'Crafting Digital Experiences'], 'text', ['#white']);
     this.typeCode()
-
-  }
+    this.isMobile = window.innerWidth <= 600;
+  } 
 
   activeTabs:any = ['welcome']
 openTabs(tab: any){

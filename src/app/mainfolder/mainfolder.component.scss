@@ -1035,3 +1035,27 @@ display: block;
         transform: translateY(0);
     }
 }
+
+/* Hide content in mobile view*/
+
+// @media only screen and (max-width: 900px) {
+//     .mobile-hide {
+//       display: none;
+//     }
+//   }
+
+//   .mobile{
+//     background-color: #000;
+//   }
+
+  @media only screen and (max-width: 900px) {
+    .mobile-show {
+      display: block;
+    //   background-color: black;
+    }
+  
+    .mobile-hide {
+      display: none;
+    }
+  }
+  
